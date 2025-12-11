@@ -132,16 +132,9 @@ def generate_process(
         if restart_event.is_set():
             clear_queue(input_queue)
             restart_event.clear()
-        print("input_queue size = ", input_queue.qsize())
-        strat_time = time.time()
         images = read_images_from_queue(input_queue, chunk_size, device, stop_event)
         images = torch.cat(images, dim=0)
-        end_time = time.time()
-        print('wait_time', end_time - strat_time)
         
-        strat_time = time.time()
         video = pipeline.process_input(images)
-        end_time = time.time()
-        print('process_time', end_time - strat_time)
         for image in video:
             output_queue.put(image)

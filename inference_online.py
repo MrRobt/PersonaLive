@@ -229,11 +229,11 @@ class App:
                 logging.error(f"Reference image error: {e}")
                 raise HTTPException(status_code=500, detail="Failed to process reference image")
 
-        if not os.path.exists("./demo_w_camera/frontend/public"):
-            os.makedirs("./demo_w_camera/frontend/public")
+        if not os.path.exists("./webcam/frontend/public"):
+            os.makedirs("./webcam/frontend/public")
 
         self.app.mount(
-            "/", StaticFiles(directory="./demo_w_camera/frontend/public", html=True), name="public"
+            "/", StaticFiles(directory="./webcam/frontend/public", html=True), name="public"
         )
 
         @self.app.on_event("shutdown")

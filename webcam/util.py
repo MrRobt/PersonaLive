@@ -70,7 +70,7 @@ def read_images_from_queue(queue, num_frames_needed, device, stop_event=None, pr
     if prefer_latest:
         read_size = queue.qsize()
     else:
-        read_size = min(queue.qsize(), num_frames_needed * 2)
+        read_size = min(queue.qsize(), num_frames_needed * 3)
     images = []
     for _ in range(read_size):
         images.append(queue.get())

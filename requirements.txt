@@ -29,3 +29,7 @@ transformers==4.36.2
 uvicorn==0.37.0
 xformers==0.0.22.post7
 peft==0.10.0
+python-multipart==0.0.20
+uvicorn==0.37.0
+onnxruntime==1.16.3
+colored==2.3.1

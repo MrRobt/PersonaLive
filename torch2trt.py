@@ -28,7 +28,7 @@ device = torch.device("cuda:0")
 device = map_device(device)
 dtype = torch.float16
 
-config_path = './configs/prompts/personalive_trt.yaml'
+config_path = './configs/prompts/personalive_online.yaml'
 cfg = OmegaConf.load(config_path)
 onnx_path = cfg.onnx_path
 onnx_opt_path = cfg.onnx_opt_path
