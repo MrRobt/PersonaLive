@@ -107,11 +107,16 @@ python inference_online.py
 ```
 then open `http://0.0.0.0:7860` in your browser. (*If `http://0.0.0.0:7860` does not work well, try `http://localhost:7860`)
 
-<!-- ## 📋 Citation
+## 📋 Citation
 If you find PersonaLive useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
 ```bibtex
-
-``` -->
+@article{li2025personalive,
+  title={PersonaLive! Expressive Portrait Image Animation for Live Streaming},
+  author={Li, Zhiyuan and Pun, Chi-Man and Fang, Chen and Wang, Jue and Cun, Xiaodong},
+  journal={arXiv preprint arXiv:2512.11253},
+  year={2025}
+}
+```
 
 ## ❤️ Acknowledgement
 This code is mainly built upon [Moore-AnimateAnyone](https://github.com/MooreThreads/Moore-AnimateAnyone), [X-NeMo](https://byteaigc.github.io/X-Portrait2/), [StreamDiffusion](https://github.com/cumulo-autumn/StreamDiffusion), [RAIN](https://pscgylotti.github.io/pages/RAIN/) and [LivePortrait](https://github.com/KlingTeam/LivePortrait), thanks to their invaluable contributions.
