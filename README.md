@@ -179,7 +179,7 @@ Special thanks to the community for providing helpful setups! 🥂
       <video src="https://github.com/user-attachments/assets/f62e2162-d239-4575-9514-34575c16301c" controls="controls" style="max-width: 100%; display: block;"></video>
     </td>
     <td width="25%">
-      <video src="https://github.com/user-attachments/assets/97663042-950f-4fa3-8e9d-e4b9ed887121" controls="controls" style="max-width: 100%; display: block;"></video>
+      <video src="https://github.com/user-attachments/assets/813e7fbd-37e9-47d7-a270-59887fafeca5" controls="controls" style="max-width: 100%; display: block;"></video>
     </td>
   </tr>
 </table>
@@ -194,7 +194,7 @@ Special thanks to the community for providing helpful setups! 🥂
   </tr>
   <tr>
     <td width="100%">
-      <video src="https://github.com/user-attachments/assets/ca2fe3af-d40a-4a1c-ab6f-4ad5bf3d1fe5" controls="controls" style="max-width: 100%; display: block;"></video>
+      <video src="https://github.com/user-attachments/assets/3be99b91-c6a1-4ca4-89e9-8fad42bb9583" controls="controls" style="max-width: 100%; display: block;"></video>
     </td>
   </tr>
   <tr>
@@ -203,6 +203,7 @@ Special thanks to the community for providing helpful setups! 🥂
     </td>
   </tr>
 </table>
+
 
 ## ⭐ Citation
 If you find PersonaLive useful for your research, welcome to cite our work using the following BibTeX:
