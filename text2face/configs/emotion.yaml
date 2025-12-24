@@ -1,0 +1,38 @@
+# Text2FaceKeypoints 配置文件 - 情绪控制版本
+
+# 模型配置
+model:
+  type: "emotion"  # 带情绪控制
+  text_encoder: "hfl/chinese-roberta-wwm-ext-large"
+  hidden_dim: 1024
+  num_landmarks: 21
+  num_pose_params: 6
+  latent_dim: 512
+  num_emotions: 7
+  emotion_embed_dim: 128
+  dropout: 0.1
+  use_temporal: true
+  num_temporal_layers: 4
+
+# 数据配置
+data:
+  train_path: "data/processed/train_emotion.jsonl"
+  val_path: "data/processed/val_emotion.jsonl"
+  num_workers: 8
+  augment: true
+
+# 训练配置
+training:
+  batch_size: 16  # 更大的模型需要更小的 batch size
+  num_epochs: 150
+  learning_rate: 5.0e-5
+  weight_decay: 0.01
+  scheduler: "cosine"
+  warmup_steps: 1000
+  landmark_weight: 1.0
+  pose_weight: 1.0
+  temporal_weight: 0.2
+  log_interval: 10
+
+# 输出配置
+output_dir: "checkpoints/emotion"

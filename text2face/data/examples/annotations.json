@@ -1,0 +1,91 @@
+{
+  "dataset": "Text2Face Training Dataset",
+  "version": "1.0",
+  "description": "Sample annotations for Text2Face training",
+  "data": [
+    {
+      "video": "videos/happy/001.mp4",
+      "text": "开心的微笑",
+      "emotion": "happy",
+      "intensity": 0.8
+    },
+    {
+      "video": "videos/happy/002.mp4",
+      "text": "愉快的表情",
+      "emotion": "happy",
+      "intensity": 0.7
+    },
+    {
+      "video": "videos/sad/001.mp4",
+      "text": "悲伤的表情",
+      "emotion": "sad",
+      "intensity": 0.8
+    },
+    {
+      "video": "videos/sad/002.mp4",
+      "text": "难过的样子",
+      "emotion": "sad",
+      "intensity": 0.9
+    },
+    {
+      "video": "videos/angry/001.mp4",
+      "text": "愤怒的表情",
+      "emotion": "angry",
+      "intensity": 0.8
+    },
+    {
+      "video": "videos/angry/002.mp4",
+      "text": "生气的样子",
+      "emotion": "angry",
+      "intensity": 0.7
+    },
+    {
+      "video": "videos/surprised/001.mp4",
+      "text": "惊讶的表情",
+      "emotion": "surprised",
+      "intensity": 0.8
+    },
+    {
+      "video": "videos/surprised/002.mp4",
+      "text": "意外的样子",
+      "emotion": "surprised",
+      "intensity": 0.9
+    },
+    {
+      "video": "videos/neutral/001.mp4",
+      "text": "面无表情",
+      "emotion": "neutral",
+      "intensity": 0.0
+    },
+    {
+      "video": "videos/neutral/002.mp4",
+      "text": "平静的表情",
+      "emotion": "neutral",
+      "intensity": 0.1
+    },
+    {
+      "video": "videos/fearful/001.mp4",
+      "text": "恐惧的表情",
+      "emotion": "fearful",
+      "intensity": 0.8
+    },
+    {
+      "video": "videos/fearful/002.mp4",
+      "text": "害怕的样子",
+      "emotion": "fearful",
+      "intensity": 0.7
+    },
+    {
+      "video": "videos/disgusted/001.mp4",
+      "text": "厌恶的表情",
+      "emotion": "disgusted",
+      "intensity": 0.8
+    },
+    {
+      "video": "videos/disgusted/002.mp4",
+      "text": "反感的表情",
+      "emotion": "disgusted",
+      "intensity": 0.7
+    }
+  ]
+}

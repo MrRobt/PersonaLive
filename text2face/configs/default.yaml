@@ -1,0 +1,36 @@
+# Text2FaceKeypoints 配置文件
+
+# 模型配置
+model:
+  type: "base"  # "base" or "emotion"
+  text_encoder: "bert-base-chinese"  # 或 "hfl/chinese-roberta-wwm-ext"
+  hidden_dim: 768
+  num_landmarks: 21
+  num_pose_params: 6
+  latent_dim: 256
+  dropout: 0.1
+  use_temporal: false
+  num_temporal_layers: 2
+
+# 数据配置
+data:
+  train_path: "data/processed/train.jsonl"
+  val_path: "data/processed/val.jsonl"
+  num_workers: 4
+  augment: true
+
+# 训练配置
+training:
+  batch_size: 32
+  num_epochs: 100
+  learning_rate: 1.0e-4
+  weight_decay: 0.01
+  scheduler: "cosine"  # "cosine", "linear", "constant"
+  warmup_steps: 500
+  landmark_weight: 1.0
+  pose_weight: 1.0
+  temporal_weight: 0.1
+  log_interval: 10
+
+# 输出配置
+output_dir: "checkpoints/default"
